@@ -1,0 +1,2 @@
+import {motion} from "framer-motion";
+export default function AmbientBackground(){return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0"><motion.div animate={{x:[0,80,0],y:[0,-30,0],scale:[1,1.14,1]}} transition={{duration:18,repeat:Infinity}} className="aurora w-96 h-96 bg-bamboo -top-24 right-10"/><motion.div animate={{x:[0,-60,0],y:[0,50,0],scale:[1,1.2,1]}} transition={{duration:22,repeat:Infinity}} className="aurora w-80 h-80 bg-lime bottom-0 left-28"/><div className="absolute inset-0 noise"/></div>}

@@ -1,0 +1,1 @@
+import {Link} from "react-router-dom";export default function NotFound(){return <main className="min-h-screen grid place-items-center"><div><h1 className="text-6xl font-bold">404</h1><Link to="/dashboard">Return to dashboard</Link></div></main>}

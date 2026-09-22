@@ -1,0 +1,1 @@
+import {useContext} from "react";import {AppContext} from "../context/AppContext";export default function useApp(){const c=useContext(AppContext);if(!c)throw Error("AppProvider missing");return c}

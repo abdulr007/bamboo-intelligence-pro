@@ -1,0 +1,2 @@
+import {useEffect,useRef,useState} from "react";
+export default function CountUp({value,digits=0}){const previous=useRef(value),[display,setDisplay]=useState(value);useEffect(()=>{let raf;const from=previous.current,start=performance.now();const tick=now=>{const p=Math.min((now-start)/800,1),e=1-Math.pow(1-p,4);setDisplay(from+(value-from)*e);if(p<1)raf=requestAnimationFrame(tick);else previous.current=value};raf=requestAnimationFrame(tick);return()=>cancelAnimationFrame(raf)},[value]);return <>{display.toFixed(digits)}</>}

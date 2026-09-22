@@ -1,0 +1,1 @@
+export default function Card({children,className=""}){return <section className={`bg-[#f2eee3] border border-ink ${className}`}>{children}</section>}

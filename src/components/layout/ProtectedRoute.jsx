@@ -1,0 +1,1 @@
+import {Navigate,Outlet,useLocation} from "react-router-dom";import useAuth from "../../hooks/useAuth";export default function ProtectedRoute(){const a=useAuth(),l=useLocation();return a.isAuthenticated?<Outlet/>:<Navigate to="/login" replace state={{from:l}}/>}

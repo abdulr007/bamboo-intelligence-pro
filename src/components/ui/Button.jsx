@@ -1,0 +1,1 @@
+const v={primary:"bg-ink text-white hover:bg-bamboo",secondary:"border border-ink hover:bg-ink hover:text-white",danger:"bg-clay text-white"};export default function Button({children,variant="primary",className="",...p}){return <button className={`px-5 py-3 font-bold text-sm inline-flex items-center justify-center gap-2 ${v[variant]} ${className}`} {...p}>{children}</button>}

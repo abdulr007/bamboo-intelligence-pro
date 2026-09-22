@@ -1,0 +1,1 @@
+export default function Badge({children,tone="green"}){const c=tone==='red'?'bg-red-100 text-clay':tone==='amber'?'bg-amber-100 text-amber-900':'bg-lime text-ink';return <span className={`px-2.5 py-1 text-[10px] font-bold uppercase ${c}`}>{children}</span>}

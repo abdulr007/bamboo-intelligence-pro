@@ -1,0 +1,1 @@
+import {useContext} from "react";import {AuthContext} from "../context/AuthContext";export default function useAuth(){const c=useContext(AuthContext);if(!c)throw Error("AuthProvider missing");return c}
